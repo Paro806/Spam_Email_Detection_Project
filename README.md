@@ -2,7 +2,7 @@
 
 A production-grade machine learning system designed to robustly classify emails as "Spam" or "Ham" (legitimate). This project features a modular pipeline architecture for training and inference, integrated with a modern Streamlit user interface for easy interaction.
 
-## 🚀 Key Features
+##  Key Features
 
 - **Advanced ML Pipeline**: Modular design separating data ingestion, transformation, and model training.
 - **Multiple Model Support**: evaluation of various algorithms including SVM, Logistic Regression, Decision Trees, and Random Forest.
@@ -10,7 +10,7 @@ A production-grade machine learning system designed to robustly classify emails 
 - **MBOX Support**: Native capability to process and classify entire `mbox` email archives.
 - **Detailed Analytics**: Comprehensive logging and performance metrics (Precision, Recall, F1-Score).
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Language**: Python 3.10+
 - **Frontend**: Streamlit
@@ -18,7 +18,7 @@ A production-grade machine learning system designed to robustly classify emails 
 - **Data Processing**: Pandas, NumPy, BeautifulSoup4
 - **Project Management**: `uv` (recommended) or `pip`
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 ├── app.py                  # Main Streamlit Web Application
@@ -34,7 +34,7 @@ A production-grade machine learning system designed to robustly classify emails 
 └── logs/                   # System runtime logs
 ```
 
-## ⚡ Installation
+## Installation
 
 1. **Clone the Repository**
    ```bash
@@ -54,7 +54,7 @@ A production-grade machine learning system designed to robustly classify emails 
    pip install -r requirements.txt
    ```
 
-## 🖥️ Usage
+## Usage
 
 ### 1. Running the Web Application
 Launch the interactive dashboard to classify emails instantly.
@@ -77,18 +77,18 @@ streamlit run app.py
 3. Artifacts (Model & Vectorizer) will be saved in the `outputs/` directory.
 4. **Important**: Update `src/config/config.py` with the new paths to your generated model and vectorizer if they change.
 
-## ⚙️ Configuration
+##  Configuration
 
 The system is highly configurable via `src/config/config.py`. You can adjust:
 - Model hyperparameters (Grid Search configuration)
 - Input/Output paths
 - Training parameters (Cross-validation folds, etc.)
 
-## 📊 Model Performance
+##  Model Performance
 
 The pipeline automatically evaluates models using 5-fold cross-validation. Metrics including Accuracy, Precision, Recall, and F1-Score are logged for each experiment. By default, the system selects the best performing model (often SVM or Random Forest) for inference.
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -96,6 +96,3 @@ The pipeline automatically evaluates models using 5-fold cross-validation. Metri
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
